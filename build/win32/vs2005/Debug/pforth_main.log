@@ -1,0 +1,77 @@
+﻿Build started 5/1/2013 10:15:55 PM.
+     1>Project "C:\Users\Reb\Dropbox\pforth_v27_20101121\pforth_v27\build\win32\vs2005\pforth_main.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Debug\pforth_main.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D PF_SUPPORT_FP /D _CRT_SECURE_NO_DEPRECATE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TC /analyze- /errorReport:prompt ..\..\..\csrc\pf_cglue.c ..\..\..\csrc\pf_clib.c ..\..\..\csrc\pf_core.c ..\..\..\csrc\pf_inner.c ..\..\..\csrc\pf_io.c ..\..\..\csrc\pf_io_none.c ..\..\..\csrc\win32_console\pf_io_win32_console.c ..\..\..\csrc\pf_main.c ..\..\..\csrc\pf_mem.c ..\..\..\csrc\pf_save.c ..\..\..\csrc\pf_text.c ..\..\..\csrc\pf_words.c ..\..\..\csrc\pfcompil.c ..\..\..\csrc\pfcustom.c
+         pfcustom.c
+         pfcompil.c
+         pf_words.c
+         pf_text.c
+         pf_save.c
+     1>c:\users\reb\dropbox\pforth_v27_20101121\pforth_v27\csrc\pf_save.c(220): warning C4293: '>>' : shift count negative or too big, undefined behavior
+     1>c:\users\reb\dropbox\pforth_v27_20101121\pforth_v27\csrc\pf_save.c(221): warning C4293: '>>' : shift count negative or too big, undefined behavior
+     1>c:\users\reb\dropbox\pforth_v27_20101121\pforth_v27\csrc\pf_save.c(222): warning C4293: '>>' : shift count negative or too big, undefined behavior
+     1>c:\users\reb\dropbox\pforth_v27_20101121\pforth_v27\csrc\pf_save.c(223): warning C4293: '>>' : shift count negative or too big, undefined behavior
+     1>c:\users\reb\dropbox\pforth_v27_20101121\pforth_v27\csrc\pf_save.c(462): warning C4018: '>' : signed/unsigned mismatch
+     1>c:\users\reb\dropbox\pforth_v27_20101121\pforth_v27\csrc\pf_save.c(470): warning C4018: '>' : signed/unsigned mismatch
+         pf_mem.c
+         pf_main.c
+         pf_io_win32_console.c
+         pf_io_none.c
+         pf_io.c
+         pf_inner.c
+     1>c:\users\reb\dropbox\pforth_v27_20101121\pforth_v27\csrc\pf_inner.c(731): warning C4146: unary minus operator applied to unsigned type, result still unsigned
+     1>c:\users\reb\dropbox\pforth_v27_20101121\pforth_v27\csrc\pf_inner.c(732): warning C4146: unary minus operator applied to unsigned type, result still unsigned
+     1>c:\users\reb\dropbox\pforth_v27_20101121\pforth_v27\csrc\pf_inner.c(1030): warning C4293: '>>' : shift count negative or too big, undefined behavior
+     1>c:\users\reb\dropbox\pforth_v27_20101121\pforth_v27\csrc\pf_inner.c(1051): warning C4293: '<<' : shift count negative or too big, undefined behavior
+     1>c:\users\reb\dropbox\pforth_v27_20101121\pforth_v27\csrc\pf_inner.c(1065): warning C4293: '>>' : shift count negative or too big, undefined behavior
+         pf_core.c
+         pf_clib.c
+         pf_cglue.c
+         Generating Code...
+       ManifestResourceCompile:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\pforth_main.exe.embed.manifest.res" Debug\pforth_main_manifest.rc 
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(990,5): warning MSB8012: TargetPath(C:\Users\Reb\Dropbox\pforth_v27_20101121\pforth_v27\build\win32\vs2005\../../../fth/\pforth_main.exe) does not match the Linker's OutputFile property value (C:\Users\Reb\Dropbox\pforth_v27_20101121\pforth_v27\fth\pforth.exe). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(992,5): warning MSB8012: TargetName(pforth_main) does not match the Linker's OutputFile property value (pforth). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+       Link:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Reb\Dropbox\pforth_v27_20101121\pforth_v27\build\win32\vs2005\../../../fth/\pforth.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\pforth_main.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\Reb\Dropbox\pforth_v27_20101121\pforth_v27\fth\pforth_main.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Reb\Dropbox\pforth_v27_20101121\pforth_v27\build\win32\vs2005\../../../fth/\pforth_main.lib" /MACHINE:X86 Debug\pforth_main.exe.embed.manifest.res
+         Debug\pf_cglue.obj
+         Debug\pf_clib.obj
+         Debug\pf_core.obj
+         Debug\pf_inner.obj
+         Debug\pf_io.obj
+         Debug\pf_io_none.obj
+         Debug\pf_io_win32_console.obj
+         Debug\pf_main.obj
+         Debug\pf_mem.obj
+         Debug\pf_save.obj
+         Debug\pf_text.obj
+         Debug\pf_words.obj
+         Debug\pfcompil.obj
+         Debug\pfcustom.obj
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\pforth_main.exe.embed.manifest" /manifest Debug\pforth_main.exe.intermediate.manifest
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\pforth_main.exe.embed.manifest.res" Debug\pforth_main_manifest.rc 
+       LinkEmbedManifest:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Reb\Dropbox\pforth_v27_20101121\pforth_v27\build\win32\vs2005\../../../fth/\pforth.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\pforth_main.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\Reb\Dropbox\pforth_v27_20101121\pforth_v27\fth\pforth_main.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Reb\Dropbox\pforth_v27_20101121\pforth_v27\build\win32\vs2005\../../../fth/\pforth_main.lib" /MACHINE:X86 Debug\pforth_main.exe.embed.manifest.res
+         Debug\pf_cglue.obj
+         Debug\pf_clib.obj
+         Debug\pf_core.obj
+         Debug\pf_inner.obj
+         Debug\pf_io.obj
+         Debug\pf_io_none.obj
+         Debug\pf_io_win32_console.obj
+         Debug\pf_main.obj
+         Debug\pf_mem.obj
+         Debug\pf_save.obj
+         Debug\pf_text.obj
+         Debug\pf_words.obj
+         Debug\pfcompil.obj
+         Debug\pfcustom.obj
+     1>LINK : fatal error LNK1168: cannot open C:\Users\Reb\Dropbox\pforth_v27_20101121\pforth_v27\build\win32\vs2005\../../../fth/\pforth.exe for writing
+     1>Done Building Project "C:\Users\Reb\Dropbox\pforth_v27_20101121\pforth_v27\build\win32\vs2005\pforth_main.vcxproj" (build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:04.67
